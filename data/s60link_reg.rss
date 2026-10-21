@@ -1,0 +1,12 @@
+#include <appinfo.rh>
+#include <s60link.rsg>
+
+UID2 KUidAppRegistrationResourceFile
+UID3 0xE7E1E002
+
+RESOURCE APP_REGISTRATION_INFO
+    {
+    app_file = "s60link";
+    localisable_resource_file = "\\resource\\apps\\s60link";
+    localisable_resource_id = R_LINK_LOCALISABLE_APP_INFO;
+    }

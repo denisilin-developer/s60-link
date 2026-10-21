@@ -1,0 +1,42 @@
+NAME SLNK
+
+#include <eikon.rh>
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <avkon.hrh>
+#include <appinfo.rh>
+#include "../src/s60link.hrh"
+
+RESOURCE RSS_SIGNATURE {}
+RESOURCE TBUF { buf = ""; }
+
+RESOURCE EIK_APP_INFO
+    {
+    menubar = r_link_menubar;
+    cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+    }
+
+RESOURCE MENU_BAR r_link_menubar
+    {
+    titles = { MENU_TITLE { menu_pane = r_link_menu; } };
+    }
+
+RESOURCE MENU_PANE r_link_menu
+    {
+    items =
+        {
+        MENU_ITEM { command = ELinkCmdRestart; txt = "Restart Wi-Fi link"; },
+        MENU_ITEM { command = ELinkCmdExit; txt = "Exit"; }
+        };
+    }
+
+RESOURCE LOCALISABLE_APP_INFO r_link_localisable_app_info
+    {
+    short_caption = "S60 Link";
+    caption_and_icon = CAPTION_AND_ICON_INFO
+        {
+        caption = "S60 Link";
+        number_of_icons = 1;
+        icon_file = "\\resource\\apps\\s60link_aif.mif";
+        };
+    }

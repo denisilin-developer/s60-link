@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#1E4FB0"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  <rect x="200" y="300" width="380" height="270" rx="28" fill="#FFFFFF"/>
+  <rect x="226" y="326" width="328" height="218" rx="10" fill="#1E4FB0" opacity="0.18"/>
+  <rect x="330" y="575" width="120" height="34" rx="8" fill="#FFFFFF"/>
+  <rect x="270" y="609" width="240" height="22" rx="11" fill="#FFFFFF"/>
+  <rect x="630" y="250" width="200" height="390" rx="34" fill="#FFFFFF"/>
+  <rect x="660" y="292" width="140" height="150" rx="8" fill="#1E4FB0"/>
+  <g fill="#1E4FB0">
+    <rect x="662" y="472" width="38" height="22" rx="5"/><rect x="711" y="472" width="38" height="22" rx="5"/><rect x="760" y="472" width="38" height="22" rx="5"/>
+    <rect x="662" y="510" width="38" height="22" rx="5"/><rect x="711" y="510" width="38" height="22" rx="5"/><rect x="760" y="510" width="38" height="22" rx="5"/>
+    <rect x="662" y="548" width="38" height="22" rx="5"/><rect x="711" y="548" width="38" height="22" rx="5"/><rect x="760" y="548" width="38" height="22" rx="5"/>
+    <rect x="662" y="586" width="38" height="22" rx="5"/><rect x="711" y="586" width="38" height="22" rx="5"/><rect x="760" y="586" width="38" height="22" rx="5"/>
+  </g>
+  <path d="M250 760 H760 M690 705 L775 760 L690 815" stroke="#FFFFFF" stroke-width="48" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

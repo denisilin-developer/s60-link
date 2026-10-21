@@ -1,0 +1,11 @@
+&EN
+#{"S60 Link"},(0xE7E1E002),0,2,3
+%{"Denys"}
+:"Denys"
+
+[0x101F7961],0,0,0,{"S60ProductID"}
+
+"$(EPOCROOT)epoc32\release\gcce\urel\s60link.exe"                      -"!:\sys\bin\s60link.exe"
+"$(EPOCROOT)epoc32\data\z\resource\apps\s60link.rsc"                   -"!:\resource\apps\s60link.rsc"
+"$(EPOCROOT)epoc32\data\z\private\10003a3f\import\apps\s60link_reg.rsc" -"!:\private\10003a3f\import\apps\s60link_reg.rsc"
+"..\..\build\icon\s60link_aif.mif"                                     -"!:\resource\apps\s60link_aif.mif"

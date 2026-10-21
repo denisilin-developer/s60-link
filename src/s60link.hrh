@@ -1,0 +1,10 @@
+#ifndef S60LINK_HRH
+#define S60LINK_HRH
+
+enum TS60LinkCommand
+    {
+    ELinkCmdRestart = 0x6000,
+    ELinkCmdExit
+    };
+
+#endif

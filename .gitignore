@@ -1,0 +1,7 @@
+build/
+group/.gcce-compiler*
+mac/.build/
+mac/build/
+*.sis
+*.sisx
+.DS_Store

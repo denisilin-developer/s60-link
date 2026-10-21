@@ -1,0 +1,28 @@
+TARGET          s60link.exe
+TARGETTYPE      exe
+UID             0x100039CE 0xE7E1E002
+SECUREID        0xE7E1E002
+VENDORID        0
+CAPABILITY      NetworkServices LocalServices ReadUserData WriteUserData ReadDeviceData AllFiles
+EPOCSTACKSIZE   0x5000
+EPOCHEAPSIZE    0x10000 0x800000
+
+USERINCLUDE     ../src
+SYSTEMINCLUDE   /epoc32/include /epoc32/include/mw /epoc32/include/platform
+SYSTEMINCLUDE   /epoc32/include/platform/mw
+
+SOURCEPATH      ../data
+START RESOURCE  s60link.rss
+HEADER
+TARGETPATH      /resource/apps
+END
+START RESOURCE  s60link_reg.rss
+TARGETPATH      /private/10003a3f/import/apps
+END
+
+SOURCEPATH      ../src
+SOURCE          s60link.cpp
+
+LIBRARY         euser.lib apparc.lib apgrfx.lib cone.lib eikcore.lib avkon.lib eikcoctl.lib
+LIBRARY         efsrv.lib bafl.lib charconv.lib esock.lib insock.lib ws32.lib fbscli.lib
+LIBRARY         gdi.lib aknskins.lib sysutil.lib msgs.lib smcm.lib gsmu.lib sendas2.lib etext.lib
