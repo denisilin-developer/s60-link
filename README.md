@@ -4,6 +4,18 @@ A PC Suite replacement for Nokia S60 3rd Edition phones and macOS. A small app o
 
 Built and tested with a Nokia E72 and macOS 14+.
 
+![Messages](docs/mac-messages.png)
+
+| Files | Phone screen on the Mac |
+|---|---|
+| ![Files](docs/mac-files.png) | ![Screenshot](docs/mac-screenshot.png) |
+| **Phone info** | **Install apps** |
+| ![Phone info](docs/mac-phone.png) | ![Install apps](docs/mac-install-apps.png) |
+
+The app on the phone:
+
+![S60 Link on a Nokia E72](docs/phone-app.png)
+
 ## Features
 
 - **Files:** browse the phone memory and memory card, upload by dragging files in, download, rename, create folders and delete.

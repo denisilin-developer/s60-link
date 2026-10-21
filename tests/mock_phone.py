@@ -86,8 +86,7 @@ class Client:
         elif cmd == 'PING':
             self.ok()
         elif cmd == 'DRIVES':
-            self.ok(b''.join(b'%s\t%d\t%d\t%s\t0\n' % (d.encode(), 50_000_000, 100_000_000, n)
-                             for d, n in (('C', b'Phone'), ('E', b'2GB'))))
+            self.ok(b'C\t231000000\t480000000\t\t0\nE\t1210000000\t1980000000\t\t0\n')
         elif cmd == 'LS':
             p = local(a[1])
             out = b''
@@ -133,7 +132,7 @@ class Client:
             SMS[:] = [m for m in SMS if m[0] != int(a[1])]
             self.ok()
         elif cmd == 'SHOT':
-            self.ok(bmp())
+            self.ok(open(os.environ['MOCK_SHOT'], 'rb').read() if os.environ.get('MOCK_SHOT') else bmp())
         else:
             self.err('unknown command')
 

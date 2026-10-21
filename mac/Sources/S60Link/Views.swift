@@ -382,6 +382,13 @@ struct ScreenshotView: View {
         .padding(20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .navigationTitle("Screenshot")
+        .task {
+            if model.screenshot == nil {
+                ui.busy = true
+                await model.takeScreenshot()
+                ui.busy = false
+            }
+        }
         .toolbar {
             ToolbarItemGroup {
                 Button {
